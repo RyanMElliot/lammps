@@ -16,7 +16,7 @@ source $VENV/bin/activate
 
 # Define build
 cmake -S cmake -B build -D CMAKE_BUILD_TYPE=Release \
-    -D CMAKE
+    -D CMAKE_INSTALL_PREFIX=$VENV \
     -D BUILD_MPI=yes -D BUILD_OMP=yes -D BUILD_LIB=yes -D BUILD_SHARED_LIBS=yes \
     -D Python_EXECUTABLE=$(which python) -D PKG_PYTHON=yes \
     -D DOWNLOAD_VORO=yes -D PKG_VORONOI=yes \

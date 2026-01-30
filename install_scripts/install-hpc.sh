@@ -35,3 +35,4 @@ rm -r build
 
 # Modify venv/bin/activate to export lammps libs locations
 echo "export LD_LIBRARY_PATH=$VENV/lib64:$LD_LIBRARY_PATH" >> $VENV/bin/activate
+echo "export LD_LIBRARY_PATH=/opt/apps/testapps/el7/software/staging/OpenBLAS/0.3.23-GCC-12.3.0/lib:$LD_LIBRARY_PATH" >> $VENV/bin/activate

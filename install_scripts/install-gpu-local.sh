@@ -5,7 +5,7 @@ mkdir build
 cd build
 
 # Load the virtual environment
-export VIRTUAL_ENV=/home/ryan-elliot/envs/lammps-gpu
+export VIRTUAL_ENV=/home/ryanelliot/lammps-gpu
 source $VIRTUAL_ENV/bin/activate
 
 cmake ../cmake \

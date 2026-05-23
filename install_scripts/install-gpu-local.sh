@@ -14,7 +14,7 @@ cmake ../cmake \
     -D BUILD_LIB=ON -D BUILD_SHARED_LIBS=ON -D BUILD_MPI=ON -D BUILD_OMP=ON -D PKG_PYTHON=ON \
     -D DOWNLOAD_VORO=ON -D PKG_VORONOI=ON -D PKG_MANYBODY=ON -D PKG_EXTRA-FIX=ON -D EXTRA-COMPUTE=ON -D PKG_REPLICA=ON -D PKG_MEAM=ON
 
-cmake --build . -- -j 2
+cmake --build . -- -j 16
 
 make install
 make install-python
